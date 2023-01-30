@@ -35,6 +35,7 @@ public class UserTest {
     }
 
     @Test
+    @DisplayName("Тест на несовпадение логина и email")
     public void isLoginEmailNotEquals() {
         Assertions.assertNotEquals(user.getLogin(), user.getEmail(), "Логин и email совпадают");
     }
